@@ -1,5 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
-
+import React, { useEffect, useState } from 'react';
 import { Container, Messages, InputWrapper, Input, InputIcon, Mention } from './styles';
 import ChannelMessage from '../ChannelMessage';
 
