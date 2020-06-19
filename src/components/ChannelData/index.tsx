@@ -26,6 +26,7 @@ const ChannelData: React.FC = () => {
 
   async function handleSubmit(e: React.KeyboardEvent<HTMLInputElement>) {
     const target = (e.target as HTMLTextAreaElement)
+    if (target.value.trim() === '') return
     if (e.key === 'Enter') {
       const data = {
         key: 100 + messages.length,
